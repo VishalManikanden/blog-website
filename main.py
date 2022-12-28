@@ -11,10 +11,6 @@ from functools import wraps
 from flask import abort
 from flask_gravatar import Gravatar
 
-# The registered admin email for the website is: vishmani340@yahoo.com. The password is: "password".
-# The registered user email for the website is: email@email.com. The password is: "password".
-# You can also register another user account with a different email.
-
 app = Flask(__name__)
 app.app_context().push()
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
@@ -268,6 +264,3 @@ def delete_post(post_id):
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-# The registered email for the website is: vishmani340@yahoo.com. The password is: "password". You can also register
-# another account with a different email.
